@@ -18,3 +18,8 @@
 - Laravel8、Javascript,Bootstrap
 
 ## テーブル設計
+![テーブル概要](https://user-images.githubusercontent.com/118151019/219633304-44d9a302-5626-4027-acaa-788f8f4e9c63.png)
+
+## その他
+- テーブル1つで作成したのでER図は作成しておりません。
+- テスト前に少しだけBootstrapを勉強していたので管理ページのみできるところはBootstrapを使用しました。
