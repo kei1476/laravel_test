@@ -105,7 +105,7 @@
                         <td style="max-width:200px;" title="{{$user->opinion}}">
                            <p class="opinion">{{ Str::limit($user->opinion, 50, '...') }}</p>
                         </td>
-                        <td><a href="delete/{{$contact->id}}">削除</a></td>
+                        <td><a class="delete-btn" href="delete/{{$contact->id}}">削除</a></td>
                     </tr>
                     @endforeach
 
@@ -146,7 +146,7 @@
                                 <td style="max-width:200px;" title="{{$user->opinion}}">
                                 <p class="opinion" id="opinion">{{ Str::limit($user->opinion, 50, '...') }}</p>
                                 </td>
-                                <td><a href="delete/{{$user->id}}" onclick="deleteContact()">削除</a></td>
+                                <td><a href="delete/{{$user->id}}" class="delete-btn" onclick="deleteContact()">削除</a></td>
                             </tr>
                             @endforeach
                         </tbody>
