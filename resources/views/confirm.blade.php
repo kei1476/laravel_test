@@ -40,7 +40,7 @@
             <td>{{$inputs['building_name']}}</td>
         </tr>
         <tr>
-            <th class="form-header">お問い合わせ内容</th>
+            <th class="form-header">ご意見</th>
             <td>{{$inputs['opinion']}}</td>
         </tr>
     </table>

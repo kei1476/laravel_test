@@ -63,7 +63,7 @@
             <p class="example">例）千駄ヶ谷マンション101</p></td>
         </tr>
         <tr>
-            <th class="form-header"><span class="required">お問い合わせ内容</span></th>
+            <th class="form-header"><span class="required">ご意見</span></th>
             <td><textarea name="opinion" class="form-textarea validate[required,maxSize[120]]">{{old('opinion')}}</textarea></td>
         </tr>
     </table>
