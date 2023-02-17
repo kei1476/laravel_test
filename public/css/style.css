@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+.form-content {
+    width: 70%;
+    margin: 60px auto 100px;
+}
+
+.page-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+
+}
+
+th {
+    padding: 20px;
+    width: 30%;
+}
+
+td {
+    padding: 20px;
+    width: 70%;
+}
+
+.example {
+    color: #b8b8b8;
+    margin-top: 8px;
+}
+
+.required::after {
+    content: '※';
+    font-size: 13px;
+    color: red;
+    margin-left: 10px;
+}
+
+.name-area {
+    display: flex;
+    width: 100%;
+}
+
+.fullname-area {
+    width: 50%;
+}
+
+.fullname {
+    width: 80%;
+    border-radius: 4px;
+    border: 1px solid #bdbbbb;
+}
+
+.fullname:first-of-type {
+    margin-right: 8px;
+}
+
+.form-header {
+    vertical-align: middle;
+}
+
+.form-text {
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #bdbbbb;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #bdbbbb;
+    border-width: 1px;
+}
+
+.post-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-mark {
+    margin-top: 8px;
+    margin-right: 4px;
+
+}
+
+.radio-btn {
+    margin-right: 6px;
+}
+
+
+.form-textarea {
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #bdbbbb;
+}
+
+
+.button-area {
+    text-align: center;
+    margin-top: 40px;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 150px;
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: #eee;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.back-btn {
+    background-color: #ca2828;
+    display: block;
+    margin: 20px auto 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 20px;
+    padding: 20px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* 完了ページ */
+
+.complete-page {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.message-area {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.complete-btn {
+    margin-top: 30px;
+}
+
+
