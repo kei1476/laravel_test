@@ -95,15 +95,15 @@
                         <th scope="row">{{$contact->id}}</th>
                         <td>{{$contact->fullname}}</td>
                         <td>
-                            @if($user->gender === 1)
+                            @if($contact->gender === 1)
                             男性
                             @else
                             女性
                             @endif
                         </td>
                         <td>{{$contact->email}}</td>
-                        <td style="max-width:200px;" title="{{$user->opinion}}">
-                           <p class="opinion">{{ Str::limit($user->opinion, 50, '...') }}</p>
+                        <td style="max-width:200px;" title="{{$contact->opinion}}">
+                           <p class="opinion">{{ Str::limit($contact->opinion, 50, '...') }}</p>
                         </td>
                         <td><a class="delete-btn" href="delete/{{$contact->id}}">削除</a></td>
                     </tr>
