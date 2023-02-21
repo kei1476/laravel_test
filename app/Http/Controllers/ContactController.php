@@ -34,12 +34,6 @@ class ContactController extends Controller
         return view('complete');
     }
 
-    public function showAdmin()
-    {
-        $contacts = Contact::paginate(10);
-        return view('admin',compact('contacts'));
-    }
-
     public function delete($id)
     {
         Contact::find($id)->delete();
@@ -54,7 +48,6 @@ class ContactController extends Controller
         $date2 = $request->input('date2');
         $email = $request->input('email');
         $query = Contact::query();
-
 
         if(!empty($fullname)){
             $query->where('fullname','like', '%'.$fullname.'%');

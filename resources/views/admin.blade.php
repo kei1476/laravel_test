@@ -67,49 +67,6 @@
                 </div>
                 <a class="reset-btn" href="/admin">リセット</a>
             </form>
-
-            @if(empty($users))
-            <div class="pagination-area">
-                <p class="page-nav">
-                    全{{ $contacts->total() }}件中
-                    {{ ($contacts->currentPage() -1) * $contacts->perPage() + 1}} -
-                    {{ (($contacts->currentPage() -1) * $contacts->perPage() + 1) + (count($contacts) -1) }}件
-                </p>
-                {{ $contacts->appends(request()->input())->links('vendor.pagination.bootstrap-4') }}
-            </div>
-
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">お名前</th>
-                        <th scope="col">性別</th>
-                        <th scope="col">メールアドレス</th>
-                        <th scope="col">ご意見</th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach($contacts as $contact)
-                    <tr>
-                        <th scope="row">{{$contact->id}}</th>
-                        <td>{{$contact->fullname}}</td>
-                        <td>
-                            @if($contact->gender === 1)
-                            男性
-                            @else
-                            女性
-                            @endif
-                        </td>
-                        <td>{{$contact->email}}</td>
-                        <td style="max-width:200px;" title="{{$contact->opinion}}">
-                           <p class="opinion">{{ Str::limit($contact->opinion, 50, '...') }}</p>
-                        </td>
-                        <td><a class="delete-btn" href="delete/{{$contact->id}}">削除</a></td>
-                    </tr>
-                    @endforeach
-
-                @else
                     <div class="pagination-area">
                         <p class="page-nav">
                             全{{ $users->total() }}件中
@@ -151,7 +108,6 @@
                             @endforeach
                         </tbody>
                     </table>
-                @endif
         </div>
 <script>
     function deleteContact() {
